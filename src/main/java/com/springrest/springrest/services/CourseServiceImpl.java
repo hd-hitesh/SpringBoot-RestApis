@@ -1,8 +1,5 @@
 package com.springrest.springrest.services;
-
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -42,8 +39,8 @@ public class CourseServiceImpl implements CourseService {
 //			}
 //		}
 //		return c;
-		return courseDao.getOne(courseId);
-//		return courseDao.getById(courseId);
+//		return courseDao.getOne(courseId);
+		return courseDao.getById(courseId);
 	}
 
 	@Override
